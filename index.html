@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <base href="./">
+  <title>Selamat Ulang Tahun 💕</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Halaman pembuka -->
+  <div class="intro-overlay" id="intro-overlay">
+    <div class="intro-bg">
+      <div class="intro-orb intro-orb-1"></div>
+      <div class="intro-orb intro-orb-2"></div>
+      <div class="intro-orb intro-orb-3"></div>
+      <div class="intro-grid" aria-hidden="true"></div>
+    </div>
+    <div class="intro-content">
+      <span class="intro-badge">to asha</span>
+      <h2 class="intro-headline">abi has prepared something sweet</h2>
+      <p class="intro-text">enter to see his surprise</p>
+      <div class="intro-line"></div>
+      <button type="button" class="intro-enter" id="intro-enter">
+        <span class="intro-enter-text">Enter</span>
+        <span class="intro-enter-icon">→</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="bg-base" aria-hidden="true"></div>
+  <div class="bg-orbs" aria-hidden="true">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+  </div>
+  <div class="bg-grain" aria-hidden="true"></div>
+
+  <audio id="bg-music" loop preload="auto" aria-label="Musik latar">
+    <source src="song.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="main-wrap">
+  <header class="hero">
+    <div class="hero-content">
+      <p class="hero-label">To my Beloved Anindita Asha Wiguna</p>
+      <h1 class="hero-title">
+        <span class="line">Happy</span>
+        <span class="line">Birthday, Sayang</span>
+      </h1>
+      <p class="hero-date" id="dynamic-date"></p>
+    </div>
+    <div class="scroll-hint">
+      <span> Wish & Photos </span>
+      <span class="chevron">↓</span>
+    </div>
+  </header>
+
+  <main>
+    <section class="card-section">
+      <article class="birthday-card">
+        <div class="card-inner">
+          <div class="card-glow"></div>
+          <h2 class="card-title">My wish for you </h2>
+          <div class="card-body">
+            <p class="card-opening"> Happy birthday, sayangku </p>
+            <p class="card-message">
+              I was just thinking about everything we’ve been through over these past 11 months,
+               and I’m honestly just so grateful that it’s you I get to walk this path with. 
+               You have this way of making everything feel a bit more grounded and special just by being there,
+                and I really value the love you bring into my life. It’s crazy how in less than a year,
+                 you’ve managed to become my safest place to land.
+            </p>
+            <p class="card-message">
+              More than anything, I want to thank you for the way you make me feel so deeply loved and seen.
+              There are days when I don’t even feel like myself, yet you look at me with so much warmth that I remember my own worth again.
+               Thank you for making me feel like I’m the most important person in your world,
+               it’s a feeling I never want to take for granted.
+            </p>
+
+            <p class="card-message">
+              I also see every single thing you do for us. 
+              Thank you for being my biggest support system, 
+              for listening to my rants, and for staying by my side through the highs and the lows.
+               I know you often go out of your way and put in so much effort just to make sure I’m okay or to put a smile on my face, 
+               and I want you to know that none of it goes unnoticed.
+            </p>
+
+              <p class="card-message">
+                I want to take a moment to be honest and say sorry for my "clingy" side. I know I can be a lot sometimes always asking for updates, wanting to be near you, or needing to know how your day is going. I realize I might be a bit much to handle, but I hope you understand that it all comes from a place of immense love.
+              </p>
+
+              <p class="card-message">
+                The truth is, I’m just so attached to the peace you give me. If I’m always looking for you, it’s because you’ve become my favorite part of every day. Thank you for your endless patience and for never making me feel "too much" or like a burden when I’m being needy. Your patience is a gift I promise to cherish.
+              </p>
+
+              <p class="card-message">
+                As you start this new chapter of your life, my biggest wish is for your own happiness. You spend so much time taking care of me and everyone else, but I hope you remember to take care of your own dreams too. I want to see you shine in everything you do, and I want you to feel the same level of support you’ve always given me.
+              </p>
+
+              <p class="card-message">
+                I am so incredibly excited to see you hit your goals this year. Whether it’s the small wins or the big milestones, I’ll be right there in the front row, cheering the loudest. I believe in you more than words can say, and I’m honored to be the person who gets to witness your journey firsthand.
+              </p>
+
+              <p class="card-message">
+                Happy Birthday, Love. I hope this year brings you as much joy, laughter, and fulfillment as you’ve brought into my life since the day we met. Here’s to us, to more months of growing together, and to a year that is as beautiful and kind as your heart. I love you so much sayangku.
+
+            </p>
+            <p class="card-closing">
+              With love,<br>
+              <strong id="sender-name">— Abi </strong>
+            </p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="gallery-section">
+      <h2 class="section-title">Photos of My Favorite Person</h2>
+      <p class="section-subtitle">Before you knew the world, and long before you knew me, you were already this bundle of light.</p>
+      <div class="gallery">
+        <div class="gallery-item" data-index="1">
+          <div class="gallery-frame">
+            <img src="images/photo1.png" alt="Foto kenangan 1" onerror="if(this.src.indexOf('.jpg')===-1){this.src='images/photo1.jpg';this.alt='Foto 1';}else{this.src='images/placeholder.svg';this.onerror=null;}">
+            <div class="gallery-overlay">
+              <span>i love you</span>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item" data-index="2">
+          <div class="gallery-frame">
+            <img src="images/photo2.png" alt="Foto kenangan 2" onerror="if(this.src.indexOf('.jpg')===-1){this.src='images/photo2.jpg';this.alt='Foto 2';}else{this.src='images/placeholder.svg';this.onerror=null;}">
+            <div class="gallery-overlay">
+              <span>i love you</span>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item" data-index="3">
+          <div class="gallery-frame">
+            <img src="images/photo3.png" alt="Foto kenangan 3" onerror="if(this.src.indexOf('.jpg')===-1){this.src='images/photo3.jpg';this.alt='Foto 3';}else{this.src='images/placeholder.svg';this.onerror=null;}">
+            <div class="gallery-overlay">
+              <span>i love you</span>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item" data-index="4">
+          <div class="gallery-frame">
+            <img src="images/photo4.png" alt="Foto kenangan 4" onerror="if(this.src.indexOf('.jpg')===-1){this.src='images/photo4.jpg';this.alt='Foto 4';}else{this.src='images/placeholder.svg';this.onerror=null;}">
+            <div class="gallery-overlay">
+              <span>i love you</span>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item" data-index="5">
+          <div class="gallery-frame">
+            <img src="images/photo5.png" alt="Foto kenangan 5" onerror="if(this.src.indexOf('.jpg')===-1){this.src='images/photo5.jpg';this.alt='Foto 5';}else{this.src='images/placeholder.svg';this.onerror=null;}">
+            <div class="gallery-overlay">
+              <span>i love you</span>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item" data-index="6">
+          <div class="gallery-frame">
+            <img src="images/photo6.png" alt="Foto kenangan 6" onerror="if(this.src.indexOf('.jpg')===-1){this.src='images/photo6.jpg';this.alt='Foto 6';}else{this.src='images/placeholder.svg';this.onerror=null;}">
+            <div class="gallery-overlay">
+              <span>i love you sayang, happy birthdayyy!</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>Lot of love from ParamaBytes.</p>
+    </footer>
+  </main>
+  </div>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-label="Tampilan foto besar">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Tutup">×</button>
+    <div class="lightbox-content">
+      <img src="" alt="" id="lightbox-img">
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
